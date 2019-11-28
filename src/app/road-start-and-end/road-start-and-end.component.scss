@@ -1,0 +1,38 @@
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  color: darkgreen;
+}
+
+.road-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 24px;
+}
+
+.buttons-container {
+  margin-top: 1.6rem;
+  button {
+    width: 80px;
+  }
+}
+
+.answer-container, img {
+  margin-top: 30px;
+}
+
+.answer-button {
+  margin-right: 14px;
+}
+
+p.end {
+  margin-top: 14px;
+}

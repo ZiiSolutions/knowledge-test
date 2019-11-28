@@ -1,0 +1,26 @@
+<section class="container">
+  <div class="road-container">
+    <h4>Start and End</h4>
+    <h1>{{ roadName }}</h1>
+    <div class="buttons-container">
+      <button
+        class="answer-button"
+        mat-raised-button
+        color="accent"
+        (click)="displayAnswer()"
+      >
+        Answer
+      </button>
+
+      <button mat-raised-button color="warn" (click)="nextQuestion()">
+        Next
+      </button>
+    </div>
+  </div>
+
+  <div class="answer-container" *ngIf="showAnswer">
+    <p class="start">Starts: {{ roadStart }}</p>
+    <p class="end">Ends: {{ roadEnd }}</p>
+    <p class="notes">Note: {{notes}}</p>
+  </div>
+</section>
